@@ -4,7 +4,7 @@
   "description": "TFT Set 18 utility — run via npx from GitHub, no npm publish needed",
   "type": "commonjs",
   "bin": {
-    "test-repo": "./bin/cli.js"
+    "test-repo": "bin/cli.js"
   },
   "publishConfig": {
     "@asdiadi:registry": "https://npm.pkg.github.com"
