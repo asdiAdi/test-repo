@@ -1,0 +1,21 @@
+// TFT Set 18: Enchanted Wilds (subset used for test.html)
+module.exports = [
+  { name: "Akali", cost: 1, traits: ["Blossom", "Juggernaut", "Summoner"], ability: "Last Rites — restore HP and strike target." },
+  { name: "Alistar", cost: 2, traits: ["Elderwood", "Brawler"], ability: "Cultivation of Spirit — dash and fire splitting orb." },
+  { name: "Azir", cost: 3, traits: ["Blackthorn", "Executioner", "Summoner"], ability: "Sands of War — summon soldiers." },
+  { name: "Ahri", cost: 4, traits: ["Blossom", "Spellweaver"], ability: "Spirit Rush — dash and fire orbs." },
+  { name: "Alune", cost: 5, traits: ["Special"], ability: "Lunar motif nuke." },
+  { name: "Camille", cost: 1, traits: ["Coven", "Ravager"], ability: "Hextech sweep." },
+  { name: "Caitlyn", cost: 2, traits: ["Coven", "Hunter"], ability: "Long-range snipe." },
+  { name: "Cassiopeia", cost: 3, traits: ["Coven", "Spellweaver"], ability: "Poison burst." },
+  { name: "Amumu", cost: 4, traits: ["Inferno", "Juggernaut"], ability: "Tantrum + stun." },
+  { name: "Ashe", cost: 5, traits: ["Elderwood", "Hunter"], ability: "Volley of arrows." },
+  { name: "Karma", cost: 1, traits: ["Blossom", "Spellweaver"], ability: "Focused Resolve beam." },
+  { name: "Kayle", cost: 2, traits: ["Solar", "Rapidfire"], ability: "Radiant ascension." },
+  { name: "Kog'Maw", cost: 3, traits: ["Caustic", "Adaptor", "Invoker"], ability: "Caustic artillery (Shred/Sunder)." },
+  { name: "Ezreal", cost: 4, traits: ["Elderwood", "Executioner"], ability: "Trueshot Barrage." },
+  { name: "Draven", cost: 5, traits: ["Elderwood"], ability: "Spinning axes." },
+  { name: "Leona", cost: 1, traits: ["Solar", "Defender"], ability: "Shield of Daybreak." },
+  { name: "Sejuani", cost: 2, traits: ["Solar", "Juggernaut"], ability: "Glacial charge." },
+  { name: "Vi", cost: 3, traits: ["Primal", "Juggernaut"], ability: "Furious Fists — heal, roar, AS + CC immunity." },
+];
