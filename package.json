@@ -1,6 +1,6 @@
 {
   "name": "@asdiadi/test-repo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "TFT Set 18 utility — run via npx from GitHub, no npm publish needed",
   "type": "commonjs",
   "main": "lib/index.js",
