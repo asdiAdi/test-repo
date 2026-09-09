@@ -1,12 +1,29 @@
 {
-  "name": "@asdiadi/test-repo",
+  "name": "@asdiAdi/test-repo",
   "version": "1.0.0",
   "description": "TFT Set 18 utility — run via npx from GitHub, no npm publish needed",
   "type": "commonjs",
   "bin": {
     "test-repo": "./bin/cli.js"
   },
-  "files": ["bin/", "lib/", "data/", "templates/"],
-  "engines": { "node": ">=18" },
+  "publishConfig": {
+    "@asdiAdi:registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asdiAdi/test-repo.git"
+  },
+  "scripts": {
+    "test": "node -e \"console.log('no tests yet')\""
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "data/",
+    "templates/"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
   "license": "MIT"
 }
