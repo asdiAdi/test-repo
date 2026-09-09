@@ -1,7 +1,5 @@
 #!/usr/bin/env node
-const { init } = require('../lib/init');
-const { run } = require('../lib/run');
-const { test } = require('../lib/test');
+const { init, run, test, sum } = require('../lib');
 
 const cmd = process.argv[2];
 
@@ -10,11 +8,23 @@ async function main() {
     case 'init': return await init();
     case 'run': return run();
     case 'test': return await test();
+    case 'sum': {
+      const a = process.argv[3];
+      const b = process.argv[4];
+      if (a === undefined || b === undefined) {
+        console.error('Usage: <sum <a> <b>>');
+        process.exitCode = 1;
+        return;
+      }
+      console.log(sum(a, b));
+      return;
+    }
     default:
-      console.log('Usage: <init|run|test>');
+      console.log('Usage: <init|run|test|sum <a> <b>>');
       console.log('  init - scaffold .github/workflows/deploy.yaml');
       console.log('  run  - print Hello World');
       console.log('  test - scaffold test.html (TFT Set 18 champions)');
+      console.log('  sum  - print sum of two numbers');
       process.exitCode = 1;
   }
 }

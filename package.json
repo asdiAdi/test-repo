@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "TFT Set 18 utility — run via npx from GitHub, no npm publish needed",
   "type": "commonjs",
+  "main": "lib/index.js",
   "bin": {
     "test-repo": "bin/cli.js"
   },
@@ -14,7 +15,10 @@
     "url": "git+https://github.com/asdiAdi/test-repo.git"
   },
   "scripts": {
-    "test": "node -e \"console.log('no tests yet')\""
+    "test": "node -e \"const {sum}=require('./lib');console.log(sum(2,3))\""
+  },
+  "dependencies": {
+    "commander": "^12.1.0"
   },
   "files": [
     "bin/",
